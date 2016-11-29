@@ -21,11 +21,11 @@
 		C0930DCF1DED47A600BEAF9E /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DC41DED47A600BEAF9E /* BaseTableViewController.m */; };
 		C0930DD01DED47A600BEAF9E /* CoreDataTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DC51DED47A600BEAF9E /* CoreDataTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DD11DED47A600BEAF9E /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DC61DED47A600BEAF9E /* CoreDataTableViewController.m */; };
-		C0930DD21DED47A600BEAF9E /* NSArray+UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DC71DED47A600BEAF9E /* NSArray+UITableViewController.h */; };
+		C0930DD21DED47A600BEAF9E /* NSArray+UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DC71DED47A600BEAF9E /* NSArray+UITableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DD31DED47A600BEAF9E /* NSArray+UITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DC81DED47A600BEAF9E /* NSArray+UITableViewController.m */; };
-		C0930DD41DED47A600BEAF9E /* NSMutableArray+UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DC91DED47A600BEAF9E /* NSMutableArray+UITableViewController.h */; };
+		C0930DD41DED47A600BEAF9E /* NSMutableArray+UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DC91DED47A600BEAF9E /* NSMutableArray+UITableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DD51DED47A600BEAF9E /* NSMutableArray+UITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DCA1DED47A600BEAF9E /* NSMutableArray+UITableViewController.m */; };
-		C0930DD61DED47A600BEAF9E /* NSString+UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DCB1DED47A600BEAF9E /* NSString+UITableViewController.h */; };
+		C0930DD61DED47A600BEAF9E /* NSString+UITableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DCB1DED47A600BEAF9E /* NSString+UITableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DD71DED47A600BEAF9E /* NSString+UITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DCC1DED47A600BEAF9E /* NSString+UITableViewController.m */; };
 		C0930DDA1DED480000BEAF9E /* QCUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DD91DED480000BEAF9E /* QCUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DDD1DED4FAC00BEAF9E /* NSString+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DDB1DED4FAC00BEAF9E /* NSString+QC.h */; settings = {ATTRIBUTES = (Public, ); }; };
