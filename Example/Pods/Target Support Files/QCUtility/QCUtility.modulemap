@@ -1,0 +1,6 @@
+framework module QCUtility {
+  umbrella header "QCUtility-umbrella.h"
+
+  export *
+  module * { export * }
+}

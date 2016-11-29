@@ -1,0 +1,16 @@
+PODS:
+  - QCUtility (0.1.0)
+
+DEPENDENCIES:
+  - QCUtility (from `../`)
+
+EXTERNAL SOURCES:
+  QCUtility:
+    :path: ../
+
+SPEC CHECKSUMS:
+  QCUtility: 62d1a7bd8cb060d4120b94c7352328630a979593
+
+PODFILE CHECKSUM: d26c35fdf262715fc0207533ed36bf168230fe4d
+
+COCOAPODS: 1.0.0
