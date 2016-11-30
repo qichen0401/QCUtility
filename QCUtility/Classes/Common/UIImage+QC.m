@@ -10,6 +10,14 @@
 
 @implementation UIImage (QC)
 
++ (UIImage *)imageWithQRCodeInputMessage:(NSString *)inputMessage size:(CGSize)size {
+    NSData *inputMessageData = [inputMessage dataUsingEncoding:NSUTF8StringEncoding];
+    CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator" withInputParameters:@{@"inputMessage":inputMessageData}];
+    CIImage *outputImage = filter.outputImage;
+    UIImage *image = [[UIImage imageWithCIImage:outputImage] imageScaleToSize:size interpolationQuality:kCGInterpolationNone];
+    return image;
+}
+
 - (UIImage *)imageScaleToSize:(CGSize)size {
     return [self imageScaleToSize:size interpolationQuality:kCGInterpolationDefault];
 }

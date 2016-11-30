@@ -19,5 +19,7 @@
 #import "BaseTableViewController.h"
 #import "CoreDataTableViewController.h"
 
+//Capture
+#import "CaptureManager.h"
 
 #endif /* QCUtility_h */

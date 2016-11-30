@@ -12,7 +12,7 @@
 		5111AE0BA772595D366E4A8FBFFF1D4C /* Pods-QCUtility_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5EB16D503454497C3A6E6E618942A /* Pods-QCUtility_Tests-dummy.m */; };
 		64EF69AC7ED9B53DFDC2781524D0E032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		81E8641CF0844BC7FED0FBEE3C89E063 /* Pods-QCUtility_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC94F08515C15E5719519D89EDA46CD /* Pods-QCUtility_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C063F0351DEEBB6100E6ECC5 /* CaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C063F0331DEEBB6100E6ECC5 /* CaptureManager.h */; };
+		C063F0351DEEBB6100E6ECC5 /* CaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C063F0331DEEBB6100E6ECC5 /* CaptureManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C063F0361DEEBB6100E6ECC5 /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C063F0341DEEBB6100E6ECC5 /* CaptureManager.m */; };
 		C0930DBD1DED479400BEAF9E /* macro.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DB81DED479400BEAF9E /* macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DBE1DED479400BEAF9E /* NSArray+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DB91DED479400BEAF9E /* NSArray+QC.h */; settings = {ATTRIBUTES = (Public, ); }; };

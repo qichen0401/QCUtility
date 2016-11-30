@@ -10,6 +10,8 @@
 
 @interface UIImage (QC)
 
++ (UIImage *)imageWithQRCodeInputMessage:(NSString *)inputMessage size:(CGSize)size;
+
 - (UIImage *)imageScaleToSize:(CGSize)size;
 - (UIImage *)imageScaleToSize:(CGSize)size interpolationQuality:(CGInterpolationQuality)quality;
 
