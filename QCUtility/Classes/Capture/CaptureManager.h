@@ -17,6 +17,7 @@ typedef NS_ENUM(NSUInteger, CaptureOutputType) {
     CaptureOutputTypeVideoData,
 };
 
+//change this to be a delegate may be a good idea
 //void (^handleQRCode)(NSString *) = ^(NSString *stringValue) {};
 @property (strong, nonatomic) void (^handleQRCode)(NSString *);
 

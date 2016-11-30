@@ -17,12 +17,12 @@ QCUtility is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "QCUtility"
+pod "QCUtility", :git => "https://github.com/qichen0401/QCUtility.git"
 ```
 
 ## Author
 
-Qi Chen, qichen0401@gmail.com
+Qi Chen
 
 ## License
 
