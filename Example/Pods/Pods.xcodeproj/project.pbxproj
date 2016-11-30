@@ -12,6 +12,8 @@
 		5111AE0BA772595D366E4A8FBFFF1D4C /* Pods-QCUtility_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5EB16D503454497C3A6E6E618942A /* Pods-QCUtility_Tests-dummy.m */; };
 		64EF69AC7ED9B53DFDC2781524D0E032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		81E8641CF0844BC7FED0FBEE3C89E063 /* Pods-QCUtility_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC94F08515C15E5719519D89EDA46CD /* Pods-QCUtility_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C063F0351DEEBB6100E6ECC5 /* CaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C063F0331DEEBB6100E6ECC5 /* CaptureManager.h */; };
+		C063F0361DEEBB6100E6ECC5 /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C063F0341DEEBB6100E6ECC5 /* CaptureManager.m */; };
 		C0930DBD1DED479400BEAF9E /* macro.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DB81DED479400BEAF9E /* macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DBE1DED479400BEAF9E /* NSArray+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DB91DED479400BEAF9E /* NSArray+QC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DBF1DED479400BEAF9E /* NSArray+QC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DBA1DED479400BEAF9E /* NSArray+QC.m */; };
@@ -69,6 +71,8 @@
 		B256C047FFB1CA06646ABC3A49A25ECD /* Pods-QCUtility_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QCUtility_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B2F6FCF384C873596FF308FC7EF5AEDC /* Pods-QCUtility_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-QCUtility_Tests.modulemap"; sourceTree = "<group>"; };
 		B60A261449C6DF520CC28E7B28952A3D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C063F0331DEEBB6100E6ECC5 /* CaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureManager.h; sourceTree = "<group>"; };
+		C063F0341DEEBB6100E6ECC5 /* CaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureManager.m; sourceTree = "<group>"; };
 		C0930DB81DED479400BEAF9E /* macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = macro.h; sourceTree = "<group>"; };
 		C0930DB91DED479400BEAF9E /* NSArray+QC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+QC.h"; sourceTree = "<group>"; };
 		C0930DBA1DED479400BEAF9E /* NSArray+QC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+QC.m"; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				C0930DD91DED480000BEAF9E /* QCUtility.h */,
 				C0930DB71DED479400BEAF9E /* Common */,
 				C0930DC21DED47A600BEAF9E /* TableViewController */,
+				C063F0321DEEBB6100E6ECC5 /* Capture */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -250,6 +255,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C063F0321DEEBB6100E6ECC5 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				C063F0331DEEBB6100E6ECC5 /* CaptureManager.h */,
+				C063F0341DEEBB6100E6ECC5 /* CaptureManager.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
 		C0930DB71DED479400BEAF9E /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +323,7 @@
 				C0930DBE1DED479400BEAF9E /* NSArray+QC.h in Headers */,
 				C0930DDD1DED4FAC00BEAF9E /* NSString+QC.h in Headers */,
 				C0930DC01DED479400BEAF9E /* UIImage+QC.h in Headers */,
+				C063F0351DEEBB6100E6ECC5 /* CaptureManager.h in Headers */,
 				C0930DD61DED47A600BEAF9E /* NSString+UITableViewController.h in Headers */,
 				C0930DBD1DED479400BEAF9E /* macro.h in Headers */,
 				C0930DCE1DED47A600BEAF9E /* BaseTableViewController.h in Headers */,
@@ -416,6 +431,7 @@
 			files = (
 				F32D8816516E652F94DF711DC6C50B2B /* QCUtility-dummy.m in Sources */,
 				C0930DD31DED47A600BEAF9E /* NSArray+UITableViewController.m in Sources */,
+				C063F0361DEEBB6100E6ECC5 /* CaptureManager.m in Sources */,
 				C0930DD51DED47A600BEAF9E /* NSMutableArray+UITableViewController.m in Sources */,
 				C0930DD11DED47A600BEAF9E /* CoreDataTableViewController.m in Sources */,
 				C0930DD71DED47A600BEAF9E /* NSString+UITableViewController.m in Sources */,
