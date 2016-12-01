@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+@protocol CaptureManagerDelegate <NSObject>
+
+- (void)didCaptureQRCodeStringValue:(NSString *)stringValue;
+
+@end
+
 @interface CaptureManager : NSObject <AVCaptureMetadataOutputObjectsDelegate, AVCaptureVideoDataOutputSampleBufferDelegate>
 
 typedef NS_ENUM(NSUInteger, CaptureOutputType) {
@@ -17,9 +23,7 @@ typedef NS_ENUM(NSUInteger, CaptureOutputType) {
     CaptureOutputTypeVideoData,
 };
 
-//change this to be a delegate may be a good idea
-//void (^handleQRCode)(NSString *) = ^(NSString *stringValue) {};
-@property (strong, nonatomic) void (^handleQRCode)(NSString *);
+@property (weak, nonatomic) id<CaptureManagerDelegate> delegate;
 
 - (void)configureWithView:(UIView *)view type:(CaptureOutputType)type error:(NSError **)error;
 
