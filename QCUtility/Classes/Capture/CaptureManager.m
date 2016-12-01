@@ -76,7 +76,7 @@
     if ([metadataObjects.firstObject isKindOfClass:[AVMetadataMachineReadableCodeObject class]]) {
         AVMetadataMachineReadableCodeObject *metadataObject = metadataObjects.firstObject;
         NSLog(@"String Value: %@", metadataObject.stringValue);
-        [self.delegate didCaptureQRCodeStringValue:metadataObject.stringValue];
+        [self.delegate captureManager:self handleQRCodeStringValue:metadataObject.stringValue];
         [self stopRunning];
     }
 }
