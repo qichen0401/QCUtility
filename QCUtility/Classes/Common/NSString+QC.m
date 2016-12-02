@@ -10,6 +10,13 @@
 
 @implementation NSString (QC)
 
+- (BOOL)isMatchRegularExpression:(NSString *)pattern {
+    NSError *error;
+    NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
+    NSRange rangeOfFirstMatch = [regularExpression rangeOfFirstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
+    return !NSEqualRanges(rangeOfFirstMatch, NSMakeRange(NSNotFound, 0));
+}
+
 - (NSString *)pinyinString {
     NSMutableString *string = [self mutableCopy];
     CFStringTransform((__bridge CFMutableStringRef)string, NULL, kCFStringTransformToLatin, NO);

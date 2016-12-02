@@ -10,6 +10,7 @@
 
 @interface NSString (QC)
 
+- (BOOL)isMatchRegularExpression:(NSString *)pattern;
 - (NSString *)pinyinString;
 
 @end

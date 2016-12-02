@@ -11,7 +11,7 @@
 
 #define APP_DELEGATE ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 #define MANAGED_OBJECT_CONTEXT APP_DELEGATE.persistentContainer.viewContext
-#define WINDOW_WIDTH APP_DELEGATE.window.bounds.size.width
-#define WINDOW_HEIGHT APP_DELEGATE.window.bounds.size.height
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
 #endif /* macro_h */
