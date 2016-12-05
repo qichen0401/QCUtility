@@ -11,10 +11,13 @@
 @implementation NSString (QC)
 
 - (BOOL)isMatchRegularExpression:(NSString *)pattern {
-    NSError *error;
-    NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
-    NSRange rangeOfFirstMatch = [regularExpression rangeOfFirstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
-    return !NSEqualRanges(rangeOfFirstMatch, NSMakeRange(NSNotFound, 0));
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    return [predicate evaluateWithObject:self];
+    
+//    NSError *error;
+//    NSRegularExpression *regularExpression = [NSRegularExpression regularExpressionWithPattern:pattern options:0 error:&error];
+//    NSRange rangeOfFirstMatch = [regularExpression rangeOfFirstMatchInString:self options:0 range:NSMakeRange(0, self.length)];
+//    return NSEqualRanges(rangeOfFirstMatch, NSMakeRange(0, self.length));
 }
 
 - (NSString *)pinyinString {
