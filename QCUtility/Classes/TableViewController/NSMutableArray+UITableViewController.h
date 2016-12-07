@@ -14,5 +14,7 @@
 - (void)insertObject:(ObjectType)object atIndexPath:(NSIndexPath *)indexPath;
 - (void)removeObjectAtIndexPath:(NSIndexPath *)indexPath;
 - (bool)removeSectionIfEmpty:(NSInteger)section;
+- (void)removeRowObject:(id)object removeEmptySection:(BOOL)removeEmptySection;
+- (void)removeRowObjectsInArray:(NSArray *)array removeEmptySection:(BOOL)removeEmptySection;
 
 @end

@@ -32,4 +32,20 @@
     }
 }
 
+- (void)removeRowObject:(id)object removeEmptySection:(BOOL)removeEmptySection {
+    for (int i = 0; i < self.count; i++) {
+        NSMutableArray *array = self[i];
+        [array removeObject:object];
+        if (removeEmptySection && [self removeSectionIfEmpty:i]) {
+            i--;
+        }
+    }
+}
+
+- (void)removeRowObjectsInArray:(NSArray *)array removeEmptySection:(BOOL)removeEmptySection {
+    for (id object in array) {
+        [self removeRowObject:object removeEmptySection:removeEmptySection];
+    }
+}
+
 @end
