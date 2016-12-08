@@ -32,6 +32,24 @@
     }
 }
 
+- (BOOL)removeObjectAtIndexPath:(NSIndexPath *)indexPath removeSectionIfEmpty:(BOOL)removeSectionIfEmpty {
+    NSMutableArray *section = self[indexPath.section];
+    [section removeObjectAtIndex:indexPath.row];
+    if (removeSectionIfEmpty && section.count == 0) {
+        [self removeObjectAtIndex:indexPath.section];
+        return true;
+    } else {
+        return false;
+    }
+}
+
+- (void)removeObjectsAtIndexPathes:(NSSet *)indexPathes removeSectionIfEmpty:(BOOL)removeSectionIfEmpty {
+    NSArray *indexPathArray = [indexPathes sortedArrayUsingDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"section" ascending:false], [NSSortDescriptor sortDescriptorWithKey:@"row" ascending:false]]];
+    for (NSIndexPath *indexPath in indexPathArray) {
+        [self removeObjectAtIndexPath:indexPath removeSectionIfEmpty:removeSectionIfEmpty];
+    }
+}
+
 - (void)removeRowObject:(id)object removeEmptySection:(BOOL)removeEmptySection {
     for (int i = 0; i < self.count; i++) {
         NSMutableArray *array = self[i];
