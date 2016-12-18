@@ -11,6 +11,6 @@
 @interface NSFileManager (QC)
 
 + (NSURL *)documentDirectory;
-+ (NSString *)pathForDocumentDirectoryWith: (NSString *)pathComponent;
++ (NSString *)pathOfDocumentDirectoryWith: (NSString *)pathComponent;
 
 @end

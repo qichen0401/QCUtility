@@ -14,7 +14,7 @@
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
 }
 
-+ (NSString *)pathForDocumentDirectoryWith: (NSString *)pathComponent {
++ (NSString *)pathOfDocumentDirectoryWith: (NSString *)pathComponent {
     return [[[NSFileManager documentDirectory] URLByAppendingPathComponent:pathComponent] path];
 }
 
