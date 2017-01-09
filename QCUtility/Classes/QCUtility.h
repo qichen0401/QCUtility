@@ -14,6 +14,7 @@
 #import "NSString+QC.h"
 #import "NSArray+QC.h"
 #import "UIImage+QC.h"
+#import "NSFileManager+QC.h"
 
 //TableViewController
 #import "BaseTableViewController.h"
