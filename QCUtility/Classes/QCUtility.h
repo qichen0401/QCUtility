@@ -20,6 +20,10 @@
 #import "BaseTableViewController.h"
 #import "CoreDataTableViewController.h"
 
+//Store
+#import "StoreManager.h"
+#import "SKProduct+QC.h"
+
 //Capture
 #import "CaptureManager.h"
 

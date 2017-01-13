@@ -12,8 +12,8 @@
 		5111AE0BA772595D366E4A8FBFFF1D4C /* Pods-QCUtility_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5EB16D503454497C3A6E6E618942A /* Pods-QCUtility_Tests-dummy.m */; };
 		64EF69AC7ED9B53DFDC2781524D0E032 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		81E8641CF0844BC7FED0FBEE3C89E063 /* Pods-QCUtility_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC94F08515C15E5719519D89EDA46CD /* Pods-QCUtility_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C00EA6DD1E0636EC0048215E /* NSFileManager+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C00EA6DB1E0636EC0048215E /* NSFileManager+QC.h */; };
 		C00EA6DE1E0636EC0048215E /* NSFileManager+QC.m in Sources */ = {isa = PBXBuildFile; fileRef = C00EA6DC1E0636EC0048215E /* NSFileManager+QC.m */; };
+		C0123FCB1E1E38430099E639 /* NSFileManager+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C00EA6DB1E0636EC0048215E /* NSFileManager+QC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C063F0351DEEBB6100E6ECC5 /* CaptureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C063F0331DEEBB6100E6ECC5 /* CaptureManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C063F0361DEEBB6100E6ECC5 /* CaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C063F0341DEEBB6100E6ECC5 /* CaptureManager.m */; };
 		C0930DBD1DED479400BEAF9E /* macro.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DB81DED479400BEAF9E /* macro.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +34,10 @@
 		C0930DDA1DED480000BEAF9E /* QCUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DD91DED480000BEAF9E /* QCUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DDD1DED4FAC00BEAF9E /* NSString+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DDB1DED4FAC00BEAF9E /* NSString+QC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DDE1DED4FAC00BEAF9E /* NSString+QC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DDC1DED4FAC00BEAF9E /* NSString+QC.m */; };
+		C0A012361E2860E800937A00 /* StoreManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A012341E2860E800937A00 /* StoreManager.h */; };
+		C0A012371E2860E800937A00 /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A012351E2860E800937A00 /* StoreManager.m */; };
+		C0A0123A1E28694B00937A00 /* SKProduct+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A012381E28694B00937A00 /* SKProduct+QC.h */; };
+		C0A0123B1E28694B00937A00 /* SKProduct+QC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A012391E28694B00937A00 /* SKProduct+QC.m */; };
 		CF7DFFA8AEA1CED8F1DB6F0198246277 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		D7C6CDE3CFA1EB19E11B285B3A0D13ED /* QCUtility-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E793B2678E4B595EDB2F336A9C4BAD9C /* QCUtility-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DD29D8243E496B8F28FCB6D1A46F7C0F /* Pods-QCUtility_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 221D0F3D30F0246B820C6B3488565F33 /* Pods-QCUtility_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,6 +99,10 @@
 		C0930DD91DED480000BEAF9E /* QCUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCUtility.h; sourceTree = "<group>"; };
 		C0930DDB1DED4FAC00BEAF9E /* NSString+QC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QC.h"; sourceTree = "<group>"; };
 		C0930DDC1DED4FAC00BEAF9E /* NSString+QC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QC.m"; sourceTree = "<group>"; };
+		C0A012341E2860E800937A00 /* StoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreManager.h; sourceTree = "<group>"; };
+		C0A012351E2860E800937A00 /* StoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreManager.m; sourceTree = "<group>"; };
+		C0A012381E28694B00937A00 /* SKProduct+QC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+QC.h"; sourceTree = "<group>"; };
+		C0A012391E28694B00937A00 /* SKProduct+QC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+QC.m"; sourceTree = "<group>"; };
 		C0D69B9539B1B04FB5F28BDDFE806D04 /* Pods-QCUtility_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QCUtility_Example-dummy.m"; sourceTree = "<group>"; };
 		C0F7870D647DD8FD59EA98D741CFDC4B /* Pods-QCUtility_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QCUtility_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C80DC6BD965E569919BEFA3B738E608D /* Pods-QCUtility_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QCUtility_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -159,6 +167,7 @@
 				C0930DD91DED480000BEAF9E /* QCUtility.h */,
 				C0930DB71DED479400BEAF9E /* Common */,
 				C0930DC21DED47A600BEAF9E /* TableViewController */,
+				C0A012331E2860C000937A00 /* Store */,
 				C063F0321DEEBB6100E6ECC5 /* Capture */,
 			);
 			path = Classes;
@@ -301,6 +310,17 @@
 			path = TableViewController;
 			sourceTree = "<group>";
 		};
+		C0A012331E2860C000937A00 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				C0A012341E2860E800937A00 /* StoreManager.h */,
+				C0A012351E2860E800937A00 /* StoreManager.m */,
+				C0A012381E28694B00937A00 /* SKProduct+QC.h */,
+				C0A012391E28694B00937A00 /* SKProduct+QC.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		FF60BE2E951F7350BD29FAE406509F38 /* QCUtility */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,12 +345,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C6CDE3CFA1EB19E11B285B3A0D13ED /* QCUtility-umbrella.h in Headers */,
+				C0123FCB1E1E38430099E639 /* NSFileManager+QC.h in Headers */,
 				C0930DD21DED47A600BEAF9E /* NSArray+UITableViewController.h in Headers */,
 				C0930DBE1DED479400BEAF9E /* NSArray+QC.h in Headers */,
+				C0A012361E2860E800937A00 /* StoreManager.h in Headers */,
 				C0930DDD1DED4FAC00BEAF9E /* NSString+QC.h in Headers */,
 				C0930DC01DED479400BEAF9E /* UIImage+QC.h in Headers */,
 				C063F0351DEEBB6100E6ECC5 /* CaptureManager.h in Headers */,
 				C0930DD61DED47A600BEAF9E /* NSString+UITableViewController.h in Headers */,
+				C0A0123A1E28694B00937A00 /* SKProduct+QC.h in Headers */,
 				C0930DBD1DED479400BEAF9E /* macro.h in Headers */,
 				C0930DCE1DED47A600BEAF9E /* BaseTableViewController.h in Headers */,
 				C0930DD41DED47A600BEAF9E /* NSMutableArray+UITableViewController.h in Headers */,
@@ -344,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD29D8243E496B8F28FCB6D1A46F7C0F /* Pods-QCUtility_Example-umbrella.h in Headers */,
-				C00EA6DD1E0636EC0048215E /* NSFileManager+QC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,9 +465,11 @@
 				C0930DD11DED47A600BEAF9E /* CoreDataTableViewController.m in Sources */,
 				C0930DD71DED47A600BEAF9E /* NSString+UITableViewController.m in Sources */,
 				C0930DBF1DED479400BEAF9E /* NSArray+QC.m in Sources */,
+				C0A0123B1E28694B00937A00 /* SKProduct+QC.m in Sources */,
 				C0930DC11DED479400BEAF9E /* UIImage+QC.m in Sources */,
 				C0930DDE1DED4FAC00BEAF9E /* NSString+QC.m in Sources */,
 				C0930DCF1DED47A600BEAF9E /* BaseTableViewController.m in Sources */,
+				C0A012371E2860E800937A00 /* StoreManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
