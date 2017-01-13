@@ -49,8 +49,8 @@ extern NSString * const UnlockFunctionalityNotification;
 
 - (void)addTransactionObserver;
 - (void)removeTransactionObserver;
-
 - (void)validateProductIdentifiers:(NSArray *)productIdentifiers;
+- (void)validateProductIdentifiersWithFileName:(NSString *)fileName;
 - (void)buy:(SKProduct *)product;
 - (void)buyProductWithIdentifier:(NSString *)identifier;
 - (void)restore;

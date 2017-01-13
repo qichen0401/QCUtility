@@ -46,6 +46,12 @@ NSString * const UnlockFunctionalityNotification = @"UnlockFunctionalityNotifica
     [productsRequest start];
 }
 
+- (void)validateProductIdentifiersWithFileName:(NSString *)fileName {
+    NSURL *url = [[NSBundle mainBundle] URLForResource:fileName withExtension:@"plist"];
+    NSArray *productIdentifiers = [NSArray arrayWithContentsOfURL:url];
+    [self validateProductIdentifiers:productIdentifiers];
+}
+
 - (void)setProducts:(NSArray<SKProduct *> *)products {
     _products = products;
     self.productsDictionary = nil;
