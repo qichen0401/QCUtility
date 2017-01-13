@@ -14,7 +14,7 @@ NSString * const UnlockFunctionalityNotification = @"UnlockFunctionalityNotifica
 @interface StoreManager ()
 
 @property (strong, nonatomic) SKProductsRequest *productsRequest;
-@property (strong, nonatomic) SKReceiptRefreshRequest *receiptRefreshRequest;
+//@property (strong, nonatomic) SKReceiptRefreshRequest *receiptRefreshRequest;
 
 @end
 
@@ -77,12 +77,14 @@ NSString * const UnlockFunctionalityNotification = @"UnlockFunctionalityNotifica
 }
 
 - (void)restore {
-    SKReceiptRefreshRequest *receiptRefreshRequest = [SKReceiptRefreshRequest new];
+    [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
     
-    // Keep a strong reference to the request.
-    self.receiptRefreshRequest = receiptRefreshRequest;
-    receiptRefreshRequest.delegate = self;
-    [receiptRefreshRequest start];
+//    SKReceiptRefreshRequest *receiptRefreshRequest = [SKReceiptRefreshRequest new];
+//    
+//    // Keep a strong reference to the request.
+//    self.receiptRefreshRequest = receiptRefreshRequest;
+//    receiptRefreshRequest.delegate = self;
+//    [receiptRefreshRequest start];
 }
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction {
