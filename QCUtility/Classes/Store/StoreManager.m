@@ -73,7 +73,7 @@ NSString * const UnlockFunctionalityNotification = @"UnlockFunctionalityNotifica
 }
 
 - (void)buy:(SKProduct *)product {
-    [[SKPaymentQueue defaultQueue] addPayment:[SKMutablePayment paymentWithProduct:product]];
+    [[SKPaymentQueue defaultQueue] addPayment:[SKPayment paymentWithProduct:product]];
 }
 
 - (void)buyProductWithIdentifier:(NSString *)identifier {
