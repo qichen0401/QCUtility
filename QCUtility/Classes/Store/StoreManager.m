@@ -29,6 +29,10 @@ NSString * const UnlockFunctionalityNotification = @"UnlockFunctionalityNotifica
     return sharedManager;
 }
 
++ (BOOL)canMakePayments {
+    return [SKPaymentQueue canMakePayments];
+}
+
 - (void)addTransactionObserver {
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 }

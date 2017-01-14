@@ -10,7 +10,8 @@
 
 /*
  to do:
- 1. load from bundle file
+ 1. can make payment
+ 
  */
 
 /*
@@ -46,6 +47,7 @@ extern NSString * const UnlockFunctionalityNotification;
 @property (nonatomic, getter=isReady) BOOL ready;
 
 + (instancetype)sharedManager;
++ (BOOL)canMakePayments;
 
 - (void)addTransactionObserver;
 - (void)removeTransactionObserver;
