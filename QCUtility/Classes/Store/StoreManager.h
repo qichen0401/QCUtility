@@ -9,12 +9,6 @@
 // Non-Consumable only
 
 /*
- to do:
- 1. can make payment
- 
- */
-
-/*
  Help:
  1.
  application:didFinishLaunchingWithOptions:
