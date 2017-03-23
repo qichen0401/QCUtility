@@ -34,9 +34,9 @@
 		C0930DDA1DED480000BEAF9E /* QCUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DD91DED480000BEAF9E /* QCUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DDD1DED4FAC00BEAF9E /* NSString+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0930DDB1DED4FAC00BEAF9E /* NSString+QC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0930DDE1DED4FAC00BEAF9E /* NSString+QC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0930DDC1DED4FAC00BEAF9E /* NSString+QC.m */; };
-		C0A012361E2860E800937A00 /* StoreManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A012341E2860E800937A00 /* StoreManager.h */; };
+		C0A012361E2860E800937A00 /* StoreManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A012341E2860E800937A00 /* StoreManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0A012371E2860E800937A00 /* StoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A012351E2860E800937A00 /* StoreManager.m */; };
-		C0A0123A1E28694B00937A00 /* SKProduct+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A012381E28694B00937A00 /* SKProduct+QC.h */; };
+		C0A0123A1E28694B00937A00 /* SKProduct+QC.h in Headers */ = {isa = PBXBuildFile; fileRef = C0A012381E28694B00937A00 /* SKProduct+QC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0A0123B1E28694B00937A00 /* SKProduct+QC.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A012391E28694B00937A00 /* SKProduct+QC.m */; };
 		CF7DFFA8AEA1CED8F1DB6F0198246277 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		D7C6CDE3CFA1EB19E11B285B3A0D13ED /* QCUtility-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E793B2678E4B595EDB2F336A9C4BAD9C /* QCUtility-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };

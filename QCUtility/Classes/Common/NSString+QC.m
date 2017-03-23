@@ -27,4 +27,15 @@
     return string;
 }
 
++ (NSString *)stringWithJSONObject:(id)obj {
+    if ([NSJSONSerialization isValidJSONObject:obj]) {
+        NSError *error;
+        NSData *data = [NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:&error];
+        NSString *string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        return string;
+    } else {
+        return  @"";
+    }
+}
+
 @end

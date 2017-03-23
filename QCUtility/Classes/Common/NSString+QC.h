@@ -12,5 +12,6 @@
 
 - (BOOL)isMatchRegularExpression:(NSString *)pattern;
 - (NSString *)pinyinString;
++ (NSString *)stringWithJSONObject:(id)obj;
 
 @end
